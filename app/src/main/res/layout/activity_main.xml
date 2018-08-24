@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/layout_brc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.machao.floatactionlibrary.FloatActionMenu
+            android:id="@+id/left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:layout_margin="30dp"
+            android:background="#00000000"
+            app:duration="200"
+            app:spreadDirection="spread_bottom"
+            app:viewOffset="20dp">
+
+        </com.machao.floatactionlibrary.FloatActionMenu>
+
+        <com.machao.floatactionlibrary.FloatActionMenu
+            android:id="@+id/right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_margin="30dp"
+            android:background="#00000000"
+            app:duration="200"
+            app:spreadDirection="spread_left"
+            app:viewOffset="20dp">
+
+        </com.machao.floatactionlibrary.FloatActionMenu>
+
+        <com.machao.floatactionlibrary.FloatActionMenu
+            android:id="@+id/bottom_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="30dp"
+            android:background="#00000000"
+            app:duration="200"
+            app:spreadDirection="spread_right"
+            app:viewOffset="20dp">
+
+        </com.machao.floatactionlibrary.FloatActionMenu>
+
+        <com.machao.floatactionlibrary.FloatActionMenu
+            android:id="@+id/bottom_right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="30dp"
+            android:background="#00000000"
+            app:duration="200"
+            app:spreadDirection="spread_up"
+            app:viewOffset="20dp">
+
+        </com.machao.floatactionlibrary.FloatActionMenu>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
